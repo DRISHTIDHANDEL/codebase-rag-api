@@ -60,7 +60,7 @@ class CodeChunk(Base):
     content = Column(Text, nullable=False)           # raw code text
 
     # --- Search columns ---
-    embedding = Column(Vector(1536), nullable=True)  # OpenAI embedding
+    embedding = Column(Vector(384), nullable=True)  # OpenAI embedding
     content_tsv = Column(TSVECTOR, nullable=True)     # full-text search index
 
     created_at = Column(DateTime, default=datetime.utcnow)
