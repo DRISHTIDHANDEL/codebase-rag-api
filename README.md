@@ -104,7 +104,7 @@ In another terminal start the worker process (use --pool=solo on Windows since C
 
 celery -A app.workers.celery_app worker --loglevel=info --pool=solo
 
-Now go to http://127.0.0.1:8000/docs
+Live deployment attempted on Hugging Face Spaces but hit a platform-side quota issue,the code is fully functional locally, see README for setup steps.
 
 Try ingesting a repo like https://github.com/psf/requests
 
