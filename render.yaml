@@ -33,7 +33,7 @@ services:
           name: rag-redis
           property: connectionString
 
-    - type: redis
+  - type: redis
     name: rag-redis
     plan: free
     ipAllowList: []
